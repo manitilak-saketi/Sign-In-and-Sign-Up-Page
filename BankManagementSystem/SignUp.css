@@ -1,0 +1,155 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(75deg,black,black,white);
+}
+#container{
+    width: 80%;
+    height: 90vh;
+    background-color:grey; 
+    display: flex;
+    border: 3px solid white;
+    border-radius: 2vw;
+    overflow: hidden;
+}
+#image{
+    width: 50%;
+    height: 100%;
+    background-color:green;
+    background-image: url(/assets/images/pexels-hikaique-65438.jpg);
+    background-size: 100%;
+    background-position: center;
+    transition: all 0.5s ;
+    background-repeat: no-repeat;
+    justify-content: space-evenly;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#image:hover{
+    background-size: 120%;
+}
+
+
+#SignUp{
+    background-image: linear-gradient(90deg,white,black);
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content:space-around;
+}
+h1{
+    font-family: cursive;
+    font-weight: 500;
+    font-size: 3vw;
+    align-items: center;
+    justify-content: center;
+
+}
+#bigtext{
+    font-weight: 700;
+    font-style: normal;
+    background-image: linear-gradient(75deg,white,black,black,white);
+    background-position: 1800px;
+    background-size: 1800px;
+    background-clip: text;
+    color: transparent;
+    animation: textAnimation 5s linear infinite both;
+    -webkit-text-stroke: 1px white;
+
+
+}
+@keyframes textAnimation{
+    form{  
+        background-position: 1800px;
+    }
+    to{
+        background-position: 0px;
+    }
+}
+pre{
+    position: relative;
+    top: 10px;
+    color: white;
+    font-size: 25px;
+    font-weight: 800;
+    align-items: center;
+    justify-content: center;
+}
+#heading{
+    font-size: 35px;
+    
+}
+#gender{
+    
+    font-size: 30px;
+}
+#heading,#gender{
+    background-image: linear-gradient(90deg,black,black,white);
+    background-clip: text;
+    color: transparent;
+}
+.inputs{
+    width: 198px;
+    height: 5vh;
+    text-indent:10px;
+    border: none;
+    outline: none;
+    border-radius:10px;
+    background-image: linear-gradient(90deg,black 25%,white);
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+}
+.inputs::placeholder{
+    color: white;
+}
+.radioButton{
+    width:3vw;
+    height:2.5vh;
+
+}
+#radioText{
+    font-size: 20px;
+    color:white;
+}
+a{
+    color:white;
+    text-decoration: none;
+    position: relative;
+    left: 100%;
+    font-weight: 800;
+}
+#address{
+    padding-top: 10px;
+    font-size: 14px;
+    width: 20vw;
+
+}
+#Submit{
+    width: 15vw;
+ border: none;
+ outline: none;
+ box-shadow: 5px 5px 15px black;
+ background-image: linear-gradient(75deg,black,white,grey,white,black);
+ background-size: 1000px;
+ background-position: 1000px;
+ font-size: 1.5vw;
+ font-weight: 800;
+ letter-spacing: 0.2vw;
+ transition: all 1s;
+}
+#Submit:hover{
+    transform: scale(1.1);
+    background-position: 0%;
+    border: 1px solid white;
+}

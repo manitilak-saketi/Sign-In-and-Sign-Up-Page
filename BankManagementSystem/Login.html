@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>People-Bank</title>
+    <link rel="stylesheet" href="./Login.css">
+    <script src="./Login.js" defer></script>
+</head>
+<body>
+    <div id="container">
+        <div id="login">
+            <div id="user_login_form">
+                <h1 class="smallheading">Login</h1>
+                <form action="">
+                    <input type="text" class="input" type="email" placeholder="Enter your email id">
+                    <input type="text" class="input" type="password" placeholder="Enter your password">
+                    <input type="submit" value="Login" class="loginbutton">
+                </form>
+            </div>
+            <div id="loginimage">
+                <h1 class="bigtext">User Login</h1>
+                <img src="/assets/images/bank2 (1).png" alt="">
+                <input type="button" value="Admin Login" class="loginbutton" onclick="adminLogin()">
+            </div>
+        </div>
+        <div id="admin">
+            <div id="adminloginimage">
+                <h1 class="bigtext">Admin Login</h1>
+                <img src="/assets/images/bank2 (2).png" alt="">
+                <input type="button" value="User Login" class="loginbutton" onclick="userLogin()">
+            </div>
+            <div id="admin_login_form">
+                <h1 class="smallheading">Admin Login</h1>
+                <form action="">
+                    <input type="text" class="input" type="email" placeholder="Enter your email id">
+                    <input type="text" class="input" type="password" placeholder="Enter your password">
+                    <input type="submit" value="Login" class="loginbutton">
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
